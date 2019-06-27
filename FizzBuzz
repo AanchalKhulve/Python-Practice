@@ -1,0 +1,34 @@
+'''
+# Sample code to perform I/O:
+
+name = input()                  # Reading input from STDIN
+print('Hi, %s.' % name)         # Writing output to STDOUT
+
+# Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+'''
+
+# Write your code here
+def main():
+    name1 = int(input())
+    #print("no of test cases"+name1)
+    l = input().split(" ")
+    #print(int(j[0]))
+    #print("no of test cases:"+name1)
+    for i in range(name1):
+        j = int(l[i])
+        #print("This test case has numbers:"+j)
+        for k in range(j):
+            if (k+1)%15==0:
+                #print("(k+1)%15==0:"+str((k+1)%15))
+                print("FizzBuzz")
+            elif (k+1)%5==0:
+                print("Buzz") 
+            elif (k+1)%3==0:
+                print("Fizz")
+            else:
+                print(k+1)
+    
+        
+    
+if __name__=="__main__":
+    main()
